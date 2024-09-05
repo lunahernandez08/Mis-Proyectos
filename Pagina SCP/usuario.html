@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamiento de Citas - Usuario</title>
+    <link rel="stylesheet" href="usuario.css">
+</head>
+<body>
+    <h1>S.C.P</h1>
+    <img class="cerebro" src="Imagenes/Cerebro transparente.png" alt="cerebro">
+    <h2>Citas</h2>
+    <p><b>Por favor diligenciar los siguientes datos:</b></p>
+    <div id="personal-info">
+        <form class="personal-info">
+            <div class="fila1">
+                <label for="full-name">Nombre Completo:</label>
+                <input type="text" placeholder="Ingrese su nombre completo.." id="full-name" name="full-name" required>
+            </div>
+            <div class="fila2">
+                <label for="phone-number">Número de celular:</label>
+                <input type="text" placeholder="Ingrese su numero de celular.." id="phone-number" name="phone-number" required>
+            </div>
+            <div class="fila3">
+                <label for="email">Correo:</label>
+                <input type="email" placeholder="Ingrese su correo.." id="email" name="email" required>
+            </div>
+            <div class="fila4">
+                <label for="location">Sede:</label>
+                <select class="location" id="location" name="location" required>
+                    <option value="Sede Carlos Betancur">Sede Carlos Betancur</option>
+                    <option value="Sede Central">Sede Central</option>
+                    <option value="Sede de Horizontes">Sede de Horizontes</option>
+                </select>
+            </div>
+            <button type="button" id="continue-button">Siguiente</button>
+        </form>
+    </div>
+
+    <div id="appointment-info" style="display: none;">
+        <form id="appointment-form">
+            <div class="form-header">
+                <h2>Fecha para la cual el usuario solicita que le sea asignada la cita</h2>
+            </div>
+            <div class="form-group">
+                <label for="appointment-date">Fecha deseada de la cita:</label>
+                <input type="date" id="appointment-date" name="appointment-date" required>
+            </div>
+            <div class="form-group">
+                <label for="appointment-time">Hora de la cita:</label>
+                <input type="time" id="appointment-time" name="appointment-time" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Consultar disponibilidad de la cita</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="usuario.js"></script>
+</body>
+</html>
