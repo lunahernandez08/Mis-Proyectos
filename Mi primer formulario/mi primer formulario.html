@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <!-- El form indica que se va a crear un formulario(un formulario indica informacion diligenciada por un usuario), el action(Conexion a una base de datos) y method son atributos y el method puede ser get o post  -->
+   
+    <form action="#" method="#" style="border: 2px solid; width: 48%; padding: 15px;"  >
+<h2>Formulario de actualización</h2>
+<label for="nombre-1">Primer nombre</label>
+<!-- La etiquta label se utilza para relacionar el input con el input que tiene a su lado y el for se relaciona con el id  -->
+<input type="text" placeholder="Primer Nombre" id="nombre-1" name="nombre-1" size="22" > 
+<!--  los label y los input tienen atributos, como. type,placeholder,id,name,size,for-->
+<label for="nombre-2">Segundo nombre</label>
+<input type="text" placeholder="Segundo Nombre" id="nombre-2" name="nombre-2" size="21"> <br><br>
+<label for="Apellido-1"> Primer apellido </label>
+<input type="text" placeholder="Primer apellido" id="apellido-1" name="apellido-1" size="21">
+<label for="Apellido-2">Segundo apellido</label>
+<input type="text" placeholder="Segundo apellido" id="apellido-2" name="apellido-2" size="21" > <br><br>
+<label for="nacionalidad">Fecha de  nacimiento</label >
+<input type="date" id="Fecha de nacimiento" name="fecha-nacimiento" >
+<label for="Pais-nacimiento">Pais de nacimiento</label>
+<select name="pais-nacimiento" id="pais-nacimiento">
+<option value="#">Seleccionar pais de nacimiento</option>
+<option value="Colombia">Colombia</option>
+<option value="Venezuela">Venezuela</option> 
+<!-- value es como el placeholder solo que aparece en negrilla y hay que borrarla -->
+<option value="Ecuador">Ecuador</option> 
+<option value="Argentina">Argentina</option> 
+</select>
+<br><br>
+<label for="Indicar-genero">Indicar su genero</label>
+<input type="radio" name="indicar-genero" value="masculino">Masculino
+<input type="radio" name="indicar-genero" value="femenino">Femenino
+<br><br>
+<label for="dirección-residencia">Dirección de residencia</label>
+<input type="text" placeholder="Dirección de residencia" id="dircción-residencia" name="dirección de residencia" size="58">
+<br><br>
+<label for="email">Correo electrónico</label>
+<input type="email" placeholder="Correo electrónico" id="email" name="email" size="28">
+<label for="telefono">Telefono</label>
+<input type="number" placeholder="Ingresar su número de tel." id="telefono" name="telefono">
+<br><br>
+<label for="msg">Mensaje</label>
+<br>
+<textarea id="msg" name="msg" cols="79" rows="5" placeholder="Escribe algo..."></textarea>
+<br><br>
+<button type="submit" id="enviar" name="enviar" style="width: 10%;" >Enviar</button>
+
+
+
+</form>
+    
+</body>
+</html>

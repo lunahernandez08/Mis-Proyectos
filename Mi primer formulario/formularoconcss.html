@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con css</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(116, 19, 172);
+            
+        }
+
+        form {
+            border: 2px solid rgb(38, 161, 243);
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(194, 140, 229);
+            
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+            font-family: cursive;
+           
+        }
+
+        label {
+            
+            margin-top: 10px;
+            color: rgb(19, 18, 18);
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 2px solid #27023b;
+            border-radius: 8px;
+        }
+
+       button {
+         
+        background-color: #3cc4c9;
+            color: hsl(0, 0%, 0%); 
+            border: 20;
+            padding: 12px 8px;
+            margin-top: 10px;
+            border-radius: 9px;
+            text-align: justify;
+            width: 50%; 
+          
+       }
+
+        button:hover {
+            background-color: rgb(1, 54, 61);
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="#" style="border: 2px solid; width: 48%; padding: 15px;"  >
+        <h2>Contacta con Nosotros</h2>
+       <label for="nombres">Nombres:</label> 
+       <input type="text" placeholder="Nombres" id="nombres" name="nombres" size="25">
+       <label for="apellidos">Apellidos:</label>
+       <input type="text" placeholder="Apellidos"  id="apellidos" name="apellidos" size="28">
+       <br><br>
+       <label for="email">Correo electrónico:</label>
+       <input type="email" placeholder="Correo electrónico" id="email" name="email" size="25">
+       <label for="telefono">Telefono:</label>
+       <input type="number" placeholder="Ingrese su numero de tel" name="telefono" id="telefono" >
+       <br><br>
+       <label for="Mensaje">Mensaje:</label>
+       <br>
+       <textarea name="msg" id="msg" cols="77" rows="6" placeholder="Escribe algo"></textarea>
+       <br><br>
+       <button type="submit" id="Enviar formulario" name="Enviar formulario">Enviar formulario</button>
+
+
+<!-- method Get y method Post dentro del formulario  -->
+</body>
+</html>
